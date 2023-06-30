@@ -1,8 +1,8 @@
-import CardComponent from './CardComponent'
-import DataComponent from './DataComponent'
-import React from 'react'
+import React from 'react';
+import CardComponent from './CardComponent';
+import DataComponent from './DataComponent';
 
-export const weatherReport = [
+const weatherReport = [
   {
     id: 1,
     weather: 'Humidity',
@@ -23,7 +23,8 @@ export const weatherReport = [
       {
         label: ['bad'],
         values: 30
-      }]
+      }
+    ]
   },
   {
     id: 2,
@@ -110,7 +111,6 @@ export const weatherReport = [
         values: 0
       }
     ]
-
   },
   {
     id: 4,
@@ -173,22 +173,46 @@ export const weatherReport = [
       }
     ]
   }
-]
+];
 
 const Analysis = () => {
   return (
-        <div>
-          <h3 className='details'>More detail`s of todays weather</h3>
-          <div className='analysis outline'>
-            {weatherReport.map((weatherObj, index) => {
-              const { id, weather, icon, cardClass, value, width, count, weatherState } = weatherObj
-              return (
-                 <CardComponent key={id} id={id} data={<DataComponent width={width} count={count} weatherState={weatherState}/>} weatherState={weatherState} weather={weather} icon={icon} cardClass={cardClass} value ={value}/>
-              )
-            })
-        }
-          </div>
-        </div>
-  )
-}
-export default Analysis
+    <div>
+      <h3 className="details">More detail`s of todays weather</h3>
+      <div className="analysis outline">
+        {weatherReport.map(weatherObj => {
+          const {
+            id,
+            weather,
+            icon,
+            cardClass,
+            value,
+            width,
+            count,
+            weatherState
+          } = weatherObj;
+          return (
+            <CardComponent
+              key={id}
+              id={id}
+              data={
+                <DataComponent
+                  width={width}
+                  count={count}
+                  weatherState={weatherState}
+                />
+              }
+              weatherState={weatherState}
+              weather={weather}
+              icon={icon}
+              cardClass={cardClass}
+              value={value}
+            />
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default Analysis;

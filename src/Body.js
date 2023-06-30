@@ -1,11 +1,11 @@
-import SideBar from "./Sidebar";
-import Header from "./Header";
-import GraphContent from "./GraphContent";
+import React from 'react';
+import SideBar from './Sidebar';
+import Header from './Header';
+import GraphContent from './GraphContent';
 import Analysis from './Analysis'
 
-
-const Body = () =>{
-    return  (
+const Body = () => {
+  return (
         <div className="main-container">
             <SideBar />
             <div className="main-page">
@@ -14,6 +14,7 @@ const Body = () =>{
                 <Analysis />
             </div>
         </div>
-    )
+  )
 }
+
 export default Body;
