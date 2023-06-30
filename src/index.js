@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Body from './Body';
-import "./index.css"
+import './index.css'
 
 const App = () => {
   return (
