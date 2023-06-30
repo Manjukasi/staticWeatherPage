@@ -16,7 +16,7 @@ body {
   overflow: hidden;
 }
 .sidebar {
-  width: 20%;
+  width: 25%;
   border-radius: 70px;
 }
 .half-container {
@@ -25,7 +25,7 @@ body {
   overflow: hidden;
 }
 .main-page{
-  width: 80%;
+  width: 75%;
   background-color:hsl(211.11deg 100% 94.71%);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -130,7 +130,7 @@ body {
 }
 .degrees {
   position: relative;
-  left: -20px;
+  left: 10px;
   align-items: center;
 }
 
