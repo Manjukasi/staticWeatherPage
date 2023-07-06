@@ -93,6 +93,7 @@ body {
 }
 .temperature {
  display: flex;
+ justify-content: space-between;
  font-size: 120px;
  color: white;
  margin: 50px 50px -10px 60px;

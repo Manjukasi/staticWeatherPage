@@ -178,7 +178,7 @@ const weatherReport = [
 const Analysis = () => {
   return (
     <div>
-      <h3 className="details">More detail`s of todays weather</h3>
+      <h3 className="details">More details of todays weather</h3>
       <div className="analysis outline">
         {weatherReport.map(weatherObj => {
           const {
